@@ -1,84 +1,148 @@
 *{
-box-sizing:border-box;
-}
-.wrapper{
-max-width:1200px;
-margin:0 auto;
-}
-header{
-    color:white;
-    background-color:rgb(6, 6, 44);;
-    padding:2rem 0;
-}
-h1{
-    font-size: 2.5rem;
-    font-family:"Great Vibes";
-}
-header nav{
-    margin-top: 30px;
-
-}
-.menu{
-    padding:0.5rem 0.75rem;
-    background-color:#555;
-    margin-right:10px;
-    color:wheat;
-    text-decoration:none;
-}
-
-.content{
-
-}
-.about{
-   
-    display:flex;
-    flex-wrap: wrap;
-    gap:2rem;
-}
-.about_img{
-    flex-grow:1;
-    flex-basis:450px;
-    min-width:400px;
-    height:400px;
-    object-fit:cover;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.about-text{
-    flex-basis:400px;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items:flex-start;
-    font-family: "Roboto Mono";
-}
-.about_img img,
-.project_img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.projects{
-    display:flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content:space-between ;
-}
-.project{
-    width:23%
-}
-
-footer{
-    background-color: rgb(6, 6, 44);
-    font-family:"Great Vibes";
-    color: white;
-    height:150px;
-    display:flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.75rem;
-}
-h3{
-    font-family: "Caveat";
-    font:1.5rem;
-}
+    box-sizing:border-box;
+    }
+    .wrapper{
+    max-width:900px;
+    margin:0 auto;
+    }
+    header{
+        color:white;
+        background-color:rgb(6, 6, 44);
+        padding:2rem 0;
+    }
+    h1{
+        font-size: 2.5rem;
+        font-family:"Great Vibes";
+    }
+    header nav{
+        margin-top: 30px;
+    
+    }
+    .menu{
+        padding:0.5rem 0.75rem;
+        background-color:#555;
+        margin-right:10px;
+        color:wheat;
+        text-decoration:none;
+    }
+    
+    .content{
+    
+    }
+    .about{
+       
+        display:flex;
+        flex-wrap: wrap;
+        gap:2rem;
+    }
+    .about_img{
+        flex-grow:1;
+        flex-basis:450px;
+        max-width:600px;
+        height:400px;
+        object-fit:cover;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      margin-left: 10px;
+    }
+    .about-text{
+        flex-basis:400px;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:flex-start;
+        font-family: "Roboto Mono";
+    }
+    .about_img img,
+    .project_img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .projects{
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+    .project{
+        width:23%
+    }
+    
+    footer{
+        background-color: rgb(6, 6, 44);
+        font-family:"Great Vibes";
+        color: white;
+        height:150px;
+        display:flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.75rem;
+    }
+    h3{
+        font-family: "Caveat";
+        font:1.5rem;
+    }
+    @media (max-width: 800px) {
+        /* ----800 */
+      
+        header {
+          text-align: center;
+        }
+      
+        .menu {
+          width: 120px;
+          margin: 0.5rem auto;
+        }
+      
+        .about {
+          margin-top: 1.5rem;
+          justify-content: center;
+        }
+        .about__img {
+          flex-basis: 80vw;
+          min-width: inherit;
+         
+        }
+        .about__text {
+          line-height: 1.5;
+          flex-basis: 80vw;
+          min-width: inherit;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+        }
+      
+        .projects {
+          justify-content: space-evenly;
+          text-align: center;
+        }
+        .project {
+          width: 40vw;
+        }
+      
+        .project__img {
+          height: 40vw;
+        
+        }
+      }
+      
+      @media (max-width: 500px) {
+        header {
+           font-size 3rem;
+          }
+      
+        .menu {
+          display: block;
+          width: 200px;
+          font-size: 1.5rem;
+          margin: 1rem auto;
+        }
+      
+        .about {
+          margin-top: 2rem;
+          font-size: larger;
+        }
+     
+      }
+      
